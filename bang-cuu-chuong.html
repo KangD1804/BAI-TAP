@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bảng cửu chương</h1>
+</body>
+<script>
+    let table, i, j;
+    table = "<table border='1' width='300' cellspacing='0' cellpadding='15'>"; //Khởi tạo bảng
+    for(i=1; i<=10; i++) {
+        table += "<tr>"; //tạo cột
+        for (j = 1; j <= 10; j++) {
+            table = table + "<td>" + j + "*" + i + "=" + i * j + "</td>"; // gán giá trị
+        }
+    }
+        table+= "</table>";
+        document.write(table);
+
+</script>
+</html>
